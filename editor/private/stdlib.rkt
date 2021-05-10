@@ -900,7 +900,8 @@
               ['down
                (unless in-button?
                  (set! mouse-state 'up))])]
-           [_ (void)])]))
+           [_ (void)])])
+      (inner (void) on-event event))
     (define/augment (get-extent)
       (send label get-extent))
     (define/augment (draw dc)
